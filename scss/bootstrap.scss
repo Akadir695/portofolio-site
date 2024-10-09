@@ -1,0 +1,62 @@
+// Font
+$font-family-sans-serif: "Poppins", sans-serif;
+// Font
+
+$primary: #cc005f;
+$secondary: #990047;
+$light: #f4f4f4;
+$light: #f8f9fa; // Bootstrap's default light background color
+
+// $body-bg: $light;
+
+// Spacers
+$spacer: 1rem !default;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+$line-height-base: 1.7;
+$headings-margin-bottom: map-get($spacers, 1);
+$headings-font-weight: bold;
+
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+$navbar-toggler-border-radius: 5px;
+
+// Button Styles
+$button-radius: 5px; // Reduced from 50px to 5px for less rounding
+$button-padding-y: 0.5rem; // Smaller vertical padding
+$button-padding-x: 1.5rem; // Smaller horizontal padding
+$btn-border-radius: $button-radius;
+
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-1g: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-1g: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+// containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 980px,
+  xxl: 1000px,
+) !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

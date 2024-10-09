@@ -1,0 +1,133 @@
+.header {
+  background: #151515 url(../images/work.jpeg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.services {
+  background: #151515 url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.text-bg-dark-gradient {
+  background: linear-gradient(
+    to right,
+    #000,
+    #333
+  ); /* Adjust the colors as needed */
+  color: white; /* Ensure the text is readable */
+}
+
+.skills-section {
+  background-color: #151f20; // Background for the skills section
+  padding: 40px 0; // Add padding to the section
+
+  .skill {
+    height: 300px; // Set a fixed height for uniformity
+    display: flex; // Use flexbox for alignment
+    flex-direction: column; // Stack elements vertically
+    justify-content: space-between; // Space out items evenly
+    align-items: center; // Center items horizontally
+    text-align: center; // Center text
+
+    // Optional hover effect
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05); // Scale effect on hover
+    }
+  }
+
+  .underline {
+    width: 150px; // Adjust underline width
+    border: 3px solid #eee; // Set underline color
+    margin: 0 auto 20px; // Center the underline
+  }
+
+  h1 {
+    color: #fff; // Change heading color
+  }
+
+  p {
+    color: #ddd; // Change paragraph color
+  }
+}
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.services .container {
+  z-index: 10;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header .text-container {
+  z-index: 10;
+}
+
+.header .roles {
+  font-family: "lora regular", serif;
+}
+.header .social {
+  position: absolute; /* Position the social icons absolutely within the header */
+  bottom: 20px; /* Adjust this value to control spacing from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Shift left to truly center */
+  display: flex; /* Keep the icons in a row */
+  gap: 15px; /* Adjust spacing between icons */
+}
+.btn-outline-light {
+  .text-white {
+    color: #fff; // Original color when not hovered
+  }
+
+  &:hover {
+    .text-white {
+      color: #000 !important; // Change text to black on hover for better contrast
+    }
+  }
+}
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .header .social i {
+    font-size: 30px;
+  }
+  .header .roles {
+    font-size: 18px !important;
+  }
+  .about-content {
+    flex-direction: column; /* Stack the items vertically */
+    text-align: center; /* Center align the text and elements */
+  }
+
+  .about-content .ratio {
+    margin: 0 auto; /* Center the ratio container */
+  }
+
+  .about-content p {
+    margin: 50px; /* Add some spacing between the image and the paragraph */
+  }
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+}
