@@ -17,12 +17,6 @@ const typeText = (text, typingEle, typingDelay) => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true
-  });
-});
 
 // Call the function to start the effect
 const loaded = () => {
